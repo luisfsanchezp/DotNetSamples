@@ -11,6 +11,7 @@ namespace TiposDeDatosApp
             //Creamos una instancia del objeto Estudiante.
             Estudiante alumno = new Estudiante(98646, "Luis Fernando", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing);
             alumno.GetInfoEstudiante();
+            Console.WriteLine(Estudiante.GetInfoEstudiante(alumno));
         }
     }
 }

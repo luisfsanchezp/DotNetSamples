@@ -24,5 +24,10 @@ namespace TiposDeDatosApp
         {
             Console.WriteLine(this.Nombres + " " + this.Apellidos);
         }
+        public static string GetInfoEstudiante(Estudiante e)
+        {
+            string datos = $"Soy el estudiante cod:{e.Id},\n mi nombre es {e.Nombres} {e.Apellidos}, \n mi dirección:{e.Direccion}\n y mi correo: {e.Email},\n Nací el {e.FeNacimiento} e ingresé el {e.FeIngreso}";
+            return datos;
+        }
     }
 }
